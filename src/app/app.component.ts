@@ -13,6 +13,9 @@ export class AppComponent {
   });
 
   collectData() {
-    console.warn(this.WeightForm.value);
+    //console.warn(this.WeightForm.value);
+    console.log(this.WeightForm.get("Weight").value);
+    console.log(this.WeightForm.get("unit").value);
+    console.log(this.WeightForm.get("Weight").value * 10 + "gm");
   }
 }
